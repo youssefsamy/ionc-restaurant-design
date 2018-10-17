@@ -1,0 +1,15 @@
+@import 'font.scss';
+
+.icon-back {
+    
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    
+    &:before {
+        color: rgb(92, 68, 50);
+        font-weight: bold;
+        font-size: 40px;
+    }
+    
+}

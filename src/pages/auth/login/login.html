@@ -1,0 +1,73 @@
+<ion-content padding>
+
+    <ion-icon name="ios-arrow-round-back" class="icon-back" (click)="back()"></ion-icon>
+
+    <div class="main-container">
+        <div class="logo">
+            <img class="logo" src="assets/image/login-logo.png">
+            <h2>{{header_title}}</h2>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="login-form" border>
+
+            <div class="">
+                <ion-input type="text" placeholder="{{label_username}}" text-center></ion-input>
+            </div>
+
+            <div class="spliter">
+                <img src="assets/image/spliter.png">
+            </div>
+
+            <div class="pw-wrapper">
+                <ion-input type="password" placeholder="{{label_password}}" text-center></ion-input>
+                <ion-icon name="eye" class="eye"></ion-icon>
+            </div>
+
+            <div class="spliter">
+                <img src="assets/image/spliter.png">
+            </div>
+
+            <div class="last-group">
+                <ion-row>
+                    <ion-col col-6 class="remember">
+                        <ion-checkbox></ion-checkbox>
+                        <label>{{label_remember}}</label>
+                    </ion-col>
+                    <ion-col col-6 class="forgot-pass" text-end>
+                        <label>{{label_forgetPw}}</label>
+                    </ion-col>
+                </ion-row>
+            </div>
+
+            <div class="btn-wrapper">
+                <button>{{label_login_btn}}</button>
+            </div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="social-login" border>
+
+            <div class="title">
+                <label>{{social_login_title}}</label>
+            </div>
+
+            <div class="image-group">
+                <ion-row>
+                    <ion-col col-4>
+                        <img src="assets/image/social1.png">
+                    </ion-col>
+                    <ion-col col-4>
+                        <img src="assets/image/google.png">
+                    </ion-col>
+                    <ion-col col-4>
+                        <img src="assets/image/facebook.png">
+                    </ion-col>
+                </ion-row>
+            </div>
+
+        </div>
+    </div>
+</ion-content>

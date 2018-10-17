@@ -1,0 +1,153 @@
+$border-color: #772B2B;
+
+page-login {
+    
+    .scroll-content {
+        padding: 0px!important;
+    }
+    
+    ion-content {
+        
+        .main-container {
+    
+            letter-spacing: 1px;
+            background-image: url('../assets/image/background1.png');
+            background-size: 100% 100%;
+            font-family: Marta, sans-serif;
+            padding: 16px;
+            min-height: 100vh;
+            
+            .logo {
+                
+                margin-top: 10px;
+                text-align: center;
+                
+                img {
+                    width: 70px;
+                }
+                
+                h2 {
+                    margin-top: 5px;
+                    text-transform: uppercase;
+                    color: black;
+                    letter-spacing: 3px;
+                    font-family: Marta-Bold;
+                }
+            }
+            
+            .vertical-line {
+    
+                height: 20px;
+                
+                position: relative;
+                &:before {
+                    content: "";
+                    width: 2px;
+                    height: 20px;
+                    position: absolute;
+                    top: 0px;
+                    background-color: black;
+                    left: 50%;
+                }
+            }
+            
+            .login-form {
+                
+                margin: 10px 0px;
+                padding-bottom: 20px;
+                position: relative;
+                margin-bottom: 50px;
+                background-color: rgba(255,255,255, 0.4);
+                letter-spacing: 0px;
+                
+                
+                ion-input {
+                    line-height: 37px;
+                    text-align: center;
+                }
+                
+                .spliter {
+                    margin: 0px 5px;
+                }
+                
+                .pw-wrapper {
+                    position: relative;
+                    
+                    .eye {
+                        position: absolute;
+                        top: 40%;
+                        right: 15px;
+                    }
+                }
+                
+                .last-group {
+                    line-height: 37px;
+                    padding: 0px 10px;
+                    
+                    ion-checkbox {
+                        vertical-align: middle;
+                        top: -1px;
+                    }
+                    
+                    ion-col {
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
+                }
+                
+                .btn-wrapper {
+    
+                    position: absolute;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    bottom: -45px;
+                    
+                    button {
+                        text-transform: uppercase;
+                        background-size: 100% 100%;
+                        background-image: url(../assets/image/btn-back1.png);
+                        display: inline-block;
+                        width: 200px;
+                        height:60px;
+                        color: white;
+                        font-size: 20px;
+                        letter-spacing: 3px;
+                        background-color: transparent;
+                    }
+                }
+            }
+            
+            .social-login {
+                margin: 10px 0px;
+                text-align: center;
+                padding: 10px;
+                background-image: url('../assets/image/socialback.png');
+                background-size: 100% 100%;
+                opacity: 0.9;
+                
+                .title {
+                    padding: 5px;
+                    border-bottom: 2px solid $border-color;
+                }
+                
+                .image-group {
+                    margin-top: 10px;
+                    padding: 5px;
+                    
+                    img {
+                        height: 30px;
+                        
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
+
+*[border] {
+    border: 5px solid $border-color;
+}
